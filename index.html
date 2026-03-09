@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Weather Dashboard</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="header">
+
+<h1>Weather Dashboard</h1>
+
+<h2 id="city">Detecting location...</h2>
+
+</div>
+
+<div class="current">
+
+<span id="icon"></span>
+<span id="temperature"></span>
+<span id="wind"></span>
+
+</div>
+
+<div class="card">
+
+<h3>🌍 Interactive Weather Map</h3>
+
+<div id="map"></div>
+
+</div>
+
+<div class="card">
+
+<h3>📊 Temperature Chart</h3>
+
+<canvas id="tempChart"></canvas>
+
+</div>
+
+<div class="card">
+
+<h3>Hourly Forecast</h3>
+
+<div id="hourly" class="horizontal"></div>
+
+</div>
+
+<div class="card">
+
+<h3>7 Day Forecast</h3>
+
+<div id="daily" class="horizontal"></div>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
